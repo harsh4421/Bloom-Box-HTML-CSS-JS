@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Box — Build Your Subscription</title>
+    <meta name="description"
+        content="Customize your Bloom Box flower subscription. Choose delivery frequency, payment plan, and special occasion add-ons.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@400;500;700;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="subscription.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="boxes.html" class="logo-container">
+                <img src="bloom-box-logo.png" alt="Bloom Box" class="logo-icon">
+                <span class="logo-text">Bloom Box</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="boxes.html#boxes">OUR BOXES</a></li>
+                <li><a href="boxes.html#flowers">FLOWERS</a></li>
+                <li><a href="boxes.html#care-guide">CARE GUIDE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="subscription-main">
+
+        <!-- Page Header -->
+        <div class="sub-page-header">
+            <span class="sub-breadcrumb"><a href="boxes.html">Home</a> <span class="breadcrumb-sep">›</span>
+                Subscription</span>
+            <h1 class="page-title">Build Your <em>BloomBox</em></h1>
+            <p class="subtitle">Customize your subscription to fit your lifestyle. Fresh flowers, delivered with love.
+            </p>
+        </div>
+
+        <div class="subscription-container">
+            <div class="form-section">
+
+                <form id="subscription-form" novalidate>
+
+                    <!-- 1. Delivery Frequency -->
+                    <div class="form-group">
+                        <h3><span class="step-badge">1</span>Delivery Frequency</h3>
+                        <div class="radio-group tabs-group" id="frequency-tabs">
+                            <label class="tab-label">
+                                <input type="radio" name="frequency" value="Weekly" checked>
+                                <span class="tab-content">
+                                    <span class="tab-icon">🗓️</span>
+                                    <span class="tab-text">Weekly</span>
+                                    <span class="tab-sub">4× / month</span>
+                                </span>
+                            </label>
+                            <label class="tab-label">
+                                <input type="radio" name="frequency" value="BiWeekly">
+                                <span class="tab-content">
+                                    <span class="tab-icon">📆</span>
+                                    <span class="tab-text">Bi-Weekly</span>
+                                    <span class="tab-sub">2× / month</span>
+                                </span>
+                            </label>
+                            <label class="tab-label">
+                                <input type="radio" name="frequency" value="Monthly">
+                                <span class="tab-content">
+                                    <span class="tab-icon">🌙</span>
+                                    <span class="tab-text">Monthly</span>
+                                    <span class="tab-sub">1× / month</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 2. Payment Plan -->
+                    <div class="form-group">
+                        <h3><span class="step-badge">2</span>Payment Plan</h3>
+                        <div class="toggle-group">
+                            <label class="toggle-switch">
+                                <input type="radio" name="paymentPlan" value="PayPerDelivery" checked>
+                                <span class="toggle-slider">
+                                    <span class="plan-icon">💳</span>
+                                    <span class="plan-label">Pay per delivery</span>
+                                    <span class="plan-sub">Flexible, cancel anytime</span>
+                                </span>
+                            </label>
+                            <label class="toggle-switch annual-switch">
+                                <input type="radio" name="paymentPlan" value="YearlyPrepay">
+                                <span class="toggle-slider">
+                                    <span class="plan-icon">🌟</span>
+                                    <span class="plan-label">Yearly Prepay</span>
+                                    <span class="plan-sub">Save ~17% annually</span>
+                                </span>
+                                <span class="badge badge-popular">BEST VALUE</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 3. Special Occasion Add-ons -->
+                    <div class="form-group">
+                        <h3><span class="step-badge">3</span>Special Occasion Add-ons <span
+                                class="optional-tag">Optional</span></h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="addons" value="299" data-name="Birthday Bouquet Bundle">
+                                <span class="checkbox-content">
+                                    <span class="addon-icon">🎂</span>
+                                    <span class="addon-info">
+                                        <span class="addon-title">Birthday Bouquet Bundle</span>
+                                        <span class="addon-desc">Premium seasonal blooms + ribbon wrap</span>
+                                    </span>
+                                    <span class="addon-price">+₹299</span>
+                                </span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="addons" value="399" data-name="Anniversary Roses">
+                                <span class="checkbox-content">
+                                    <span class="addon-icon">🌹</span>
+                                    <span class="addon-info">
+                                        <span class="addon-title">Anniversary Roses</span>
+                                        <span class="addon-desc">12 red roses + personalised card</span>
+                                    </span>
+                                    <span class="addon-price">+₹399</span>
+                                </span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="addons" value="349" data-name="Holiday Arrangement">
+                                <span class="checkbox-content">
+                                    <span class="addon-icon">🎆</span>
+                                    <span class="addon-info">
+                                        <span class="addon-title">Holiday Arrangement</span>
+                                        <span class="addon-desc">Festive themed bouquet for Diwali, Christmas,
+                                            etc.</span>
+                                    </span>
+                                    <span class="addon-price">+₹349</span>
+                                </span>
+                            </label>
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="addons" value="249" data-name="Sympathy / Get Well Soon">
+                                <span class="checkbox-content">
+                                    <span class="addon-icon">🤍</span>
+                                    <span class="addon-info">
+                                        <span class="addon-title">Sympathy / Get Well Soon</span>
+                                        <span class="addon-desc">Soft white and lavender mix</span>
+                                    </span>
+                                    <span class="addon-price">+₹249</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 4. Delivery Details -->
+                    <div class="form-group">
+                        <h3><span class="step-badge">4</span>Delivery Details</h3>
+                        <div class="details-grid">
+                            <div class="input-group">
+                                <label for="customerName">
+                                    <span class="input-label-icon">👤</span> Full Name
+                                </label>
+                                <input type="text" id="customerName" name="customerName" class="custom-input"
+                                    placeholder="Jane Doe" required autocomplete="name">
+                            </div>
+                            <div class="input-group">
+                                <label for="customerPhone">
+                                    <span class="input-label-icon">📞</span> Phone Number
+                                </label>
+                                <input type="tel" id="customerPhone" name="customerPhone" class="custom-input"
+                                    placeholder="+91 98765 43210" required autocomplete="tel">
+                            </div>
+                            <div class="input-group full-width">
+                                <label for="customerEmail">
+                                    <span class="input-label-icon">✉️</span> Email Address
+                                </label>
+                                <input type="email" id="customerEmail" name="customerEmail" class="custom-input"
+                                    placeholder="jane@example.com" required autocomplete="email">
+                            </div>
+                            <div class="input-group full-width">
+                                <label for="customerAddress">
+                                    <span class="input-label-icon">📍</span> Delivery Address
+                                </label>
+                                <textarea id="customerAddress" name="customerAddress" class="custom-input" rows="3"
+                                    placeholder="123 Flower St, City, State ZIP" required
+                                    autocomplete="street-address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Order Summary Section -->
+            <div class="summary-section">
+                <div class="summary-card sticky-summary">
+                    <div class="summary-header">
+                        <h2>Order Summary</h2>
+                        <span class="summary-freshness">🌸 Fresh guarantee</span>
+                    </div>
+                    <div class="summary-details">
+                        <div class="summary-line">
+                            <span id="summary-box">Medium Box</span>
+                            <span id="summary-box-price">₹799</span>
+                        </div>
+                        <div class="summary-line text-sm text-gray">
+                            <span>Frequency: <strong id="summary-frequency">Weekly</strong></span>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="summary-line">
+                            <span>Vase Option</span>
+                            <span id="summary-vase-price">₹0.00</span>
+                        </div>
+                        <div id="summary-addons-container">
+                            <!-- Dynamically populated via JS -->
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="summary-line discount-line" id="discount-row" style="display: none;">
+                            <span>Yearly Prepay Discount</span>
+                            <span id="summary-discount">-₹0.00</span>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total <span id="payment-term-text">per delivery</span></span>
+                            <span id="summary-total-price" class="price-script">₹799</span>
+                        </div>
+
+                        <button type="submit" form="subscription-form" class="btn btn-primary btn-full"
+                            id="checkout-btn">
+                            <span class="btn-text">Subscribe Now 🌺</span>
+                            <span class="btn-spinner" aria-hidden="true"></span>
+                        </button>
+                        <p class="guarantee-text">Cancel anytime &nbsp;·&nbsp; No hidden fees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+        <div class="modal-card">
+            <div class="modal-confetti" aria-hidden="true">🌸 🌷 🌺 🌹 🌼</div>
+            <div class="modal-icon">✅</div>
+            <h2 id="modal-heading" class="modal-title">You're <em>blooming</em>!</h2>
+            <p class="modal-message" id="modal-message">
+                Thank you! Your subscription is confirmed and your first box is on its way.
+            </p>
+            <div class="modal-details" id="modal-details"></div>
+            <button class="btn btn-primary modal-close-btn" id="modal-close-btn">Back to Home 🏡</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="subscription.js"></script>
+</body>
+
+</html>

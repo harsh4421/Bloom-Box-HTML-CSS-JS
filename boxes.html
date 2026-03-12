@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Box — Choose Your Box</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="boxes.html" class="logo-container">
+                <img src="bloom-box-logo.png" alt="Bloom Box" class="logo-icon">
+                <span class="logo-text">Bloom Box</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#boxes" id="nav-boxes">OUR BOXES</a></li>
+                <li><a href="#flowers" id="nav-flowers">FLOWERS</a></li>
+                <li><a href="#vases" id="nav-vases">VASES</a></li>
+                <li><a href="#care-guide" id="nav-care">CARE GUIDE</a></li>
+                <li><a href="subscription.html" class="subscribe-btn">SUBSCRIBE NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ═══════ HERO ═══════ -->
+        <section class="hero">
+            <div class="hero-text">
+                <span class="hero-tag">FRESH WEEKLY DELIVERIES</span>
+                <h1 class="hero-title">
+                    Flowers that make<br /><em>Every week bloom</em>
+                </h1>
+                <p class="hero-desc">
+                    Hand-curated seasonal arrangements, sustainably sourced and delivered fresh to your door. Choose
+                    your perfect box below.
+                </p>
+                <div class="hero-actions">
+                    <a href="#boxes" class="btn btn-primary">BROWSE BOXES ↓</a>
+                    <a href="Subscription.html" class="btn btn-outline">VIEW PLANS</a>
+                </div>
+            </div>
+            <div class="hero-visual" style="align-items: flex-start;">
+                <div class="floating-wrapper"
+                    style="width:100%; height:100%; display:flex; justify-content:center; align-items:flex-start;">
+                    <div class="hero-carousel" id="heroCarousel">
+                        <!-- Slide 1: Roses bouquet -->
+                        <div class="hero-carousel-slide active">
+                            <img src="hero_roses.png" alt="Orange & Burgundy Roses">
+                        </div>
+                        <!-- Slide 2: Purple Lilacs -->
+                        <div class="hero-carousel-slide">
+                            <img src="image_2.jpg" alt="Purple Lilacs">
+                        </div>
+                        <!-- Dot indicators -->
+                        <div class="carousel-dots" id="carouselDots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form id="build-box-form">
+
+            <!-- ═══════ BOX SELECTION ═══════ -->
+            <section id="boxes" class="boxes-section">
+                <div class="boxes-header">
+                    <h2>Pick Your <em>Box Size</em></h2>
+                    <p>From intimate tablescapes to grand statement bouquets — there's a BloomBox<br>for every space.
+                    </p>
+                </div>
+
+                <div class="boxes-grid">
+                    <label class="box-card-wrapper">
+                        <input type="radio" name="boxSize" value="Small" class="hidden-radio" data-price="499" required>
+                        <div class="box-card">
+                            <div class="box-icon">🌷</div>
+                            <h3>Small Box</h3>
+                            <p class="box-sub">5–7 STEMS · DESK OR SIDE TABLE</p>
+                            <p class="box-price"><span class="price-script">₹499</span> / delivery</p>
+                            <ul class="box-features">
+                                <li>8–10 seasonal stems</li>
+                                <li>Single bloom variety</li>
+                                <li>Eco-friendly wrapping</li>
+                                <li>Care card included</li>
+                            </ul>
+                            <span class="btn-select btn-petite">SELECT PETITE</span>
+                        </div>
+                    </label>
+
+                    <label class="box-card-wrapper">
+                        <input type="radio" name="boxSize" value="Medium" class="hidden-radio" data-price="799" required
+                            checked>
+                        <div class="box-card">
+                            <span class="badge badge-popular">MOST POPULAR</span>
+                            <div class="box-icon">💐</div>
+                            <h3>Medium Box</h3>
+                            <p class="box-sub">10–14 STEMS · DINING OR LIVING ROOM</p>
+                            <p class="box-price"><span class="price-script">₹799</span> / delivery</p>
+                            <ul class="box-features">
+                                <li>15–18 mixed seasonal stems</li>
+                                <li>3 complementary varieties</li>
+                                <li>Premium ribbon &amp; wrapping</li>
+                                <li>Handwritten gift note</li>
+                                <li>Extended care guide</li>
+                            </ul>
+                            <span class="btn-select btn-classic">SELECT CLASSIC</span>
+                        </div>
+                    </label>
+
+                    <label class="box-card-wrapper">
+                        <input type="radio" name="boxSize" value="Large" class="hidden-radio" data-price="1199"
+                            required>
+                        <div class="box-card">
+                            <span class="badge badge-luxury">LUXURY</span>
+                            <div class="box-icon">🌹</div>
+                            <h3>Large Box</h3>
+                            <p class="box-sub">18–24 STEMS · EVENT DECORATION</p>
+                            <p class="box-price"><span class="price-script">₹1,199</span> / delivery</p>
+                            <ul class="box-features">
+                                <li>25–30 luxury stems</li>
+                                <li>5+ premium varieties</li>
+                                <li>Signature keepsake box</li>
+                                <li>Vase of your choice</li>
+                                <li>Priority same-day dispatch</li>
+                                <li>Florist styling card</li>
+                            </ul>
+                            <span class="btn-select btn-grand">SELECT GRAND</span>
+                        </div>
+                    </label>
+                </div>
+            </section>
+
+            <!-- ═══════ FLOWER SELECTION ═══════ -->
+            <section id="flowers" class="flowers-section">
+                <div class="flowers-header text-center">
+                    <h2>Our Distinctive <em>Blooms</em></h2>
+                    <p>Responsibly sourced from local farms and expertly curated into breathtaking arrangements.</p>
+                </div>
+
+                <div class="product-grid">
+                    <label class="flower-card-wrapper">
+                        <input type="radio" name="flowerType" value="Lily" class="hidden-radio" required checked>
+                        <div class="product-card">
+                            <div class="product-image-container">
+                                <img src="pink_lilies_1773071061061.png" alt="Lily Lane" class="product-image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title">Lily Lane</h3>
+                                <p class="product-desc">Beautiful pink lilies arranged with care to brighten any room.
+                                </p>
+                                <div class="care-tip">
+                                    <span class="care-tip-title">🌿 Care Guide</span>
+                                    <div class="care-tip-grid">
+                                        <span>⏳ 7–10 days</span>
+                                        <span>💧 Every 2 days</span>
+                                        <span>☀️ Indirect bright</span>
+                                    </div>
+                                    <p class="care-tip-pro">💡 Remove pollen stamens to prevent staining</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="flower-card-wrapper">
+                        <input type="radio" name="flowerType" value="Tulip" class="hidden-radio" required>
+                        <div class="product-card">
+                            <div class="product-image-container">
+                                <img src="yellow_tulips_1773071097144.png" alt="Sunrise Tulips" class="product-image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title">Sunrise Tulips</h3>
+                                <p class="product-desc">Brighten up the day with these vibrant yellow fresh tulips.</p>
+                                <div class="care-tip">
+                                    <span class="care-tip-title">🌿 Care Guide</span>
+                                    <div class="care-tip-grid">
+                                        <span>⏳ 5–8 days</span>
+                                        <span>💧 Every day</span>
+                                        <span>☀️ Cool & indirect</span>
+                                    </div>
+                                    <p class="care-tip-pro">💡 Keep away from heat sources & fruit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="flower-card-wrapper">
+                        <input type="radio" name="flowerType" value="Rose" class="hidden-radio" required>
+                        <div class="product-card">
+                            <div class="product-image-container">
+                                <img src="red_roses_1773071114769.png" alt="Rose Bloom" class="product-image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title">Rose Bloom</h3>
+                                <p class="product-desc">A classic and romantic dense bouquet of premium red roses.</p>
+                                <div class="care-tip">
+                                    <span class="care-tip-title">🌿 Care Guide</span>
+                                    <div class="care-tip-grid">
+                                        <span>⏳ 7–10 days</span>
+                                        <span>💧 Every 2 days</span>
+                                        <span>☀️ Indirect bright</span>
+                                    </div>
+                                    <p class="care-tip-pro">💡 Trim stems at 45° angle each water change</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="flower-card-wrapper">
+                        <input type="radio" name="flowerType" value="Mixed" class="hidden-radio" required>
+                        <div class="product-card">
+                            <div class="product-image-container">
+                                <img src="mixed_peonies_1773073270449.png" alt="Mixed Bouquet" class="product-image">
+                            </div>
+                            <div class="product-details">
+                                <h3 class="product-title">Mixed Bouquet</h3>
+                                <p class="product-desc">A gorgeous bouquet of pink and white peonies perfect for any
+                                    occasion.</p>
+                                <div class="care-tip">
+                                    <span class="care-tip-title">🌿 Care Guide</span>
+                                    <div class="care-tip-grid">
+                                        <span>⏳ 7–12 days</span>
+                                        <span>💧 Every 2 days</span>
+                                        <span>☀️ Indirect light</span>
+                                    </div>
+                                    <p class="care-tip-pro">💡 See included florist care card for details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+
+                </div>
+            </section>
+
+            <!-- ═══════ VASE SELECTION ═══════ -->
+            <section id="vases" class="vase-section">
+                <div class="flowers-header">
+                    <h2>Choose Your <em>Vase</em></h2>
+                    <p>Complete your arrangement with the perfect vessel — hand-selected to complement your blooms.</p>
+                </div>
+
+                <div class="vase-cards-grid">
+                    <!-- No Vase -->
+                    <label class="vase-card-wrapper">
+                        <input type="radio" name="vaseOption" value="0" data-name="No Vase" class="hidden-radio"
+                            checked>
+                        <div class="vase-product-card">
+                            <div class="vase-check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div class="vase-image-container"
+                                style="display:flex; align-items:center; justify-content:center; background: #f8edf0;">
+                                <span style="font-size:5.5rem;">🚫</span>
+                            </div>
+                            <div class="vase-card-details">
+                                <h3>No Vase</h3>
+                                <p>Already have your favourite vase? Just the flowers, perfectly wrapped.</p>
+                                <div class="vase-card-footer">
+                                    <span class="vase-price-tag">Free</span>
+                                    <span class="vase-badge-selected">✓ Selected</span>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Glass Vase -->
+                    <label class="vase-card-wrapper">
+                        <input type="radio" name="vaseOption" value="299" data-name="Glass Vase" class="hidden-radio">
+                        <div class="vase-product-card">
+                            <div class="vase-check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div class="vase-image-container">
+                                <img src="glass_vase.png" alt="Glass Vase">
+                            </div>
+                            <div class="vase-card-details">
+                                <h3>Glass Vase</h3>
+                                <p>A beautiful rounded clear glass vase — timeless and elegant for any home.</p>
+                                <div class="vase-card-footer">
+                                    <span class="vase-price-tag">+₹299</span>
+                                    <span class="vase-badge-selected">✓ Selected</span>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Ceramic Vase -->
+                    <label class="vase-card-wrapper">
+                        <input type="radio" name="vaseOption" value="899" data-name="Ceramic Vase" class="hidden-radio">
+                        <div class="vase-product-card">
+                            <div class="vase-check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <div class="vase-image-container">
+                                <img src="ceramic_vase.png" alt="Ceramic Vase">
+                            </div>
+                            <div class="vase-card-details">
+                                <h3>Ceramic Vase</h3>
+                                <p>Hand-crafted matte ceramic with a blush glaze — artisanal and premium.</p>
+                                <div class="vase-card-footer">
+                                    <span class="vase-price-tag">+₹899</span>
+                                    <span class="vase-badge-selected">✓ Selected</span>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Terracotta — centred row -->
+                    <div class="vase-card-center-row">
+                        <label class="vase-card-wrapper">
+                            <input type="radio" name="vaseOption" value="599" data-name="Terracotta Vase"
+                                class="hidden-radio">
+                            <div class="vase-product-card">
+                                <div class="vase-check-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="vase-image-container">
+                                    <img src="terracotta_vase.png" alt="Terracotta Vase">
+                                </div>
+                                <div class="vase-card-details">
+                                    <h3>Terracotta Vase</h3>
+                                    <p>Rustic earthy clay pot with a boho charm — warm tones, natural feel.</p>
+                                    <div class="vase-card-footer">
+                                        <span class="vase-price-tag">+₹599</span>
+                                        <span class="vase-badge-selected">✓ Selected</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+        </form><!-- end form -->
+
+        <!-- ═══════ ORDER SUMMARY ═══════ -->
+        <section class="order-summary-section">
+            <div class="order-summary-card">
+                <h2>Order Summary</h2>
+
+                <div class="os-row">
+                    <span id="summary-box-name">Select a Box</span>
+                    <span id="summary-box-price">₹0.00</span>
+                </div>
+                <div class="os-row-sm">
+                    Flower: <strong id="summary-flower-name">None</strong>
+                </div>
+
+                <div class="os-divider"></div>
+
+                <div class="os-row">
+                    <span id="summary-vase-name">No Vase</span>
+                    <span id="summary-vase-price">₹0.00</span>
+                </div>
+
+                <div class="os-divider"></div>
+
+                <div class="os-total-row">
+                    <span>Subtotal</span>
+                    <span id="summary-total-price" class="price-script">₹0.00</span>
+                </div>
+
+                <div class="os-actions">
+                    <button type="button" id="proceed-btn" class="btn-proceed">PROCEED TO SUBSCRIPTION</button>
+                    <p class="os-guarantee">🌸 Next step: Delivery &amp; Add-ons</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ PROMO BANNER ═══════ -->
+        <section class="promo-banner-section">
+            <div class="promo-banner-container">
+                <img src="watercolor_flowers_1773074901792.png" alt="Floral Decoration" class="promo-floral-dec">
+                <div class="promo-content">
+                    <span class="promo-tag">SPECIAL OFFER</span>
+                    <h2>SUMMER <br><em>Sale</em></h2>
+                    <a href="subscription.html" class="btn-promo">Subscribe Now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ CARE GUIDE ═══════ -->
+        <section id="care-guide" class="care-section">
+            <div class="care-header text-center">
+                <span class="care-tag">KEEPING THEM FRESH</span>
+                <h2>Flower <em>Care Guide</em></h2>
+                <p>Follow these simple steps to keep your blooms beautiful for longer.</p>
+            </div>
+
+
+
+            <div class="universal-care-card">
+                <h3>🌿 Universal First-Day Care</h3>
+                <ol class="universal-steps">
+                    <li>Unpack immediately and remove any packaging from stems.</li>
+                    <li>Fill a clean vase with fresh, cool (not cold) water.</li>
+                    <li>Cut 1—2 cm off the bottom of each stem at a 45° angle.</li>
+                    <li>Add the included flower food packet to the water.</li>
+                    <li>Remove any leaves that fall below the waterline.</li>
+                    <li>Place away from direct sunlight, heat vents, and ripe fruit.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="boxes.html" class="footer-logo">
+                    <img src="bloom-box-logo.png" alt="Bloom Box" class="footer-logo-icon">
+                    <span class="footer-logo-text">BloomBox</span>
+                </a>
+                <p class="footer-desc">Bringing nature's beauty into your home, one fresh bouquet at a time. Sustainably
+                    sourced, hand-arranged, and delivered with love.</p>
+            </div>
+            <div class="footer-links">
+                <h4>SHOP</h4>
+                <ul>
+                    <li><a href="#boxes">Our Boxes</a></li>
+                    <li><a href="subscription.html">Subscriptions</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Corporate Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>LEARN</h4>
+                <ul>
+                    <li><a href="#care-guide">Care Guides</a></li>
+                    <li><a href="#">Seasonal Calendar</a></li>
+                    <li><a href="#">Our Florists</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BloomBox. Made with 🌸 and a lot of fresh flowers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
