@@ -1593,8 +1593,7 @@ header {
    ========================= */
    
 .site-footer {
-    background: linear-gradient(135deg, #FFFBF5 3.8rem, #f9e0e0fa 70%);
-    padding: 80px 40px 30px;
+    background-color: #fdf2f5;   
 }
 
 
