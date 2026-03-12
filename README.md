@@ -1,196 +1,262 @@
-# Bloom-Box-Flower_Subsription
-Semester II Sprint I
-HTML5, CSS, JavaScript Final Project
+<div align="center">
 
-🌸 Bloom Box — Flower Subscription E-Commerce Platform
+# 🌸 Bloom Box
+### Flower Subscription E-Commerce Platform
 
-A modern, fully responsive flower subscription web app that lets users build a custom flower box, configure a recurring delivery plan, and complete checkout — all powered by pure HTML5, CSS3, and vanilla JavaScript with zero dependencies.
+*A modern, fully responsive flower subscription web app — built with pure HTML5, CSS3 & vanilla JavaScript.*
 
-🚀 LIVE DEMO: https://bloom-box-theta.vercel.app/
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-c0607a?style=for-the-badge)](https://bloom-box-theta.vercel.app/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## 📋 Table of Contents
+**Semester II · Sprint I · HTML5 / CSS / JavaScript Final Project**
 
-- [Overview](#overview)
-- [Live Demo](#live-demo)
-- [Features](#features)
-- [File Structure](#file-structure)
-- [Pages & Sections](#pages--sections)
-- [How It Works](#how-it-works)
-- [Pricing Logic](#pricing-logic)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Screenshots](#screenshots)
+</div>
 
 ---
 
-## Overview
+## 📸 Screenshots
 
-**Bloom Box** is an e-commerce flower subscription platform where users can:
+<img width="1705" alt="Hero & Box Selector" src="https://github.com/user-attachments/assets/76a862b0-cc8a-4341-aa92-40d167fc5ea9" />
+<img width="1700" alt="Flower & Vase Selection" src="https://github.com/user-attachments/assets/09b0d7cb-d6ea-4e7e-b0e5-06f1b3b1227d" />
+<img width="1704" alt="Order Summary" src="https://github.com/user-attachments/assets/63201a43-1eb0-4134-9a47-e57d57a786ab" />
+<img width="1707" alt="Subscription Config" src="https://github.com/user-attachments/assets/29d6c59c-0a51-4116-94d0-ce57814a2850" />
+<img width="1710" alt="Add-ons & Pricing" src="https://github.com/user-attachments/assets/2e6eb628-a202-4ea3-b1b5-22815f794e0b" />
+<img width="1707" alt="Checkout Form" src="https://github.com/user-attachments/assets/dfd9a34a-0a52-4a85-b78c-409c60b372f6" />
+<img width="688" alt="Mobile View" src="https://github.com/user-attachments/assets/49231d2f-63e9-4799-8649-179d469f6961" />
 
-1. Browse and select a flower box size (Small / Medium / Large)
-2. Choose a flower type and vase option
-3. Configure a recurring subscription (Weekly / Bi-Weekly / Monthly)
-4. Pick a payment plan with optional yearly prepay discount
-5. Add special occasion bundles (Birthday, Anniversary, Holiday, Sympathy)
-6. Complete checkout with real-time dynamic pricing
+---
 
-The entire order flow spans two pages and uses `localStorage` to pass order data between them — no backend required.
+## 🌿 Overview
 
+**Bloom Box** is a fully client-side flower subscription e-commerce platform. Users go through a two-page flow to:
 
+1. Browse and select a **box size** (Small / Medium / Large)
+2. Choose a **flower variety** and optional **vase upgrade**
+3. Configure a **recurring subscription** (Weekly / Bi-Weekly / Monthly)
+4. Select a **payment plan** — pay per delivery or save 17% with yearly prepay
+5. Add **special occasion bundles** (Birthday, Anniversary, Holiday, Sympathy)
+6. Complete **checkout** with real-time dynamic pricing
 
-## Features
+Order data is passed between pages via `localStorage` — no backend, no build tools, no dependencies.
+
+---
+
+## 🚀 Features
 
 | Feature | Description |
 |---|---|
-| 🎁 Box Configurator | Choose Small (₹499), Medium (₹799), or Large (₹1199) boxes |
-| 🌷 Flower Selector | Pick from seasonal varieties — Mixed Seasonal, Roses, Sunflowers, Lilacs |
+| 🎁 Box Configurator | Choose Small (₹499), Medium (₹799), or Large (₹1,199) |
+| 🌷 Flower Selector | Mixed Seasonal, Roses, Sunflowers, Lilacs |
 | 🏺 Vase Options | No Vase (Free), Ceramic (+₹299), Crystal (+₹899), Rustic Wood (+₹599) |
-| 🔄 Subscription Frequencies | Weekly (4×/month), Bi-Weekly (2×/month), Monthly (1×/month) |
-| 💳 Payment Plans | Pay-per-delivery (flexible) or Yearly Prepay (save ~17%) |
-| ✨ Special Add-ons | Birthday Bouquet (+₹299), Anniversary Roses (+₹399), Holiday Arrangement (+₹349), Sympathy Bouquet (+₹249) |
-| 📊 Live Order Summary | Real-time pricing panel with animated price updates |
-| ✅ Form Validation | Client-side validation with field highlighting and auto-focus |
-| 🎠 Hero Carousel | Auto-rotating image carousel with dot navigation and pause-on-hover |
-| 🔍 Scroll Spy | Active nav link highlights based on current scroll position |
-| 📱 Fully Responsive | Mobile-first layout adapting from desktop to narrow viewports |
-| 🎉 Success Modal | Animated confirmation modal on order completion |
+| 🔄 Subscription Frequencies | Weekly (4×/mo), Bi-Weekly (2×/mo), Monthly (1×/mo) |
+| 💳 Payment Plans | Pay-per-delivery (flexible) or Yearly Prepay (~17% savings) |
+| ✨ Special Add-ons | Birthday (+₹299), Anniversary (+₹399), Holiday (+₹349), Sympathy (+₹249) |
+| 📊 Live Order Summary | Sticky pricing panel with animated real-time updates |
+| ✅ Form Validation | Field highlighting, error feedback, auto-focus on first empty field |
+| 🎠 Hero Carousel | Auto-rotating slides (4s), dot navigation, pauses on hover |
+| 🔍 Scroll Spy | Active nav link updates as user scrolls through sections |
+| 🎉 Success Modal | Animated confirmation overlay — clears state on close |
+| 📱 Fully Responsive | Mobile-first layout, adapts seamlessly from desktop to phone |
 
 ---
 
-## File Structure
+## 🛠️ Tech Stack
 
+| Technology | Purpose |
+|---|---|
+| **HTML5** | Semantic structure, accessible form elements, ARIA attributes |
+| **CSS3** | Flexbox & Grid layouts, `@keyframes` animations, custom properties, media queries |
+| **JavaScript (ES6+)** | DOM manipulation, event handling, dynamic pricing, `localStorage` API |
+| **Google Fonts** | Playfair Display · Dancing Script · Montserrat |
+
+> ⚡ **Zero dependencies** — no npm, no bundler, no framework. Open `boxes.html` and it runs.
+
+---
+
+## 🌍 Box Pricing & Options
+
+### Box Sizes
+
+| Box | Stems | Ideal For | Price |
+|---|---|---|---|
+| 🌷 Small | 5–7 stems | Desk or side table | ₹499 / delivery |
+| 💐 Medium ⭐ *Most Popular* | 10–14 stems | Dining or living room | ₹799 / delivery |
+| 🌺 Large | 18–22 stems | Grand statement piece | ₹1,199 / delivery |
+
+### Vase Upgrades
+
+| Vase | Price |
+|---|---|
+| No Vase | Free |
+| Ceramic Vase | +₹299 |
+| Crystal Vase | +₹899 |
+| Rustic Wood Vase | +₹599 |
+
+### Special Occasion Add-ons
+
+| Add-on | Includes | Price |
+|---|---|---|
+| 🎂 Birthday Bouquet Bundle | Premium seasonal blooms + ribbon wrap | +₹299 |
+| 🌹 Anniversary Roses | 12 red roses + personalised card | +₹399 |
+| 🎆 Holiday Arrangement | Festive bouquet — Diwali, Christmas, etc. | +₹349 |
+| 🤍 Sympathy / Get Well Soon | Soft white and lavender mix | +₹249 |
+
+---
+
+## ⚙️ How It Works
+
+```
+boxes.html                             subscription.html
+───────────────────────────────        ──────────────────────────────────────
+1. Select box size                     4. Choose delivery frequency
+2. Choose flower type           →      5. Select payment plan + add-ons
+3. Pick vase option                    6. Fill in delivery details
+   ↓                                   7. Submit → success modal → clear state
+   Save selections to localStorage
+```
+
+**Cross-page state transfer:**
+
+```javascript
+// boxes.html — saves order on Proceed click
+const orderData = {
+  boxSize: "Medium",    boxPrice: 799,
+  flowerType: "Roses",  vaseOption: "Ceramic Vase",  vasePrice: 299
+};
+localStorage.setItem('bloomboxOrder', JSON.stringify(orderData));
+window.location.href = 'subscription.html';
+
+// subscription.js — reads order on page load
+const orderData = JSON.parse(localStorage.getItem('bloomboxOrder'));
+```
+
+---
+
+## 📊 Pricing Formula
+
+```
+Cost per delivery = Box Price + Vase Price + Σ Selected Add-ons
+
+── Pay-per-delivery ──────────────────────────────
+  Total = Cost per delivery
+
+── Yearly Prepay ─────────────────────────────────
+  Deliveries / year = frequency_per_month × 12
+  Subtotal          = Cost per delivery × Deliveries / year
+  Discount          = Subtotal × 0.17
+  Total             = Subtotal − Discount
+```
+
+| Frequency | Per Month | Per Year |
+|---|---|---|
+| Weekly | 4× | 48× |
+| Bi-Weekly | 2× | 24× |
+| Monthly | 1× | 12× |
+
+---
+
+## 📂 Project Structure
+
+```
 bloom-box/
 │
 ├── boxes.html            # Page 1 — Hero, box/flower/vase selector, order summary
-├── subscription.html     # Page 2 — Frequency, payment plan, add-ons, checkout form
+├── subscription.html     # Page 2 — Frequency, payment plan, add-ons, checkout
 │
-├── style.css             # Global styles — navbar, hero, product cards, carousel
+├── style.css             # Global styles — navbar, hero, cards, carousel
 ├── subscription.css      # Subscription page — tabs, toggles, checkbox cards, modal
 │
-├── script.js             # Scroll spy · Hero carousel · Box builder · localStorage write
-├── subscription.js       # Live pricing · Form validation · Success modal · localStorage read
+├── script.js             # Scroll spy · carousel · box builder · localStorage write
+├── subscription.js       # Live pricing · validation · success modal · localStorage read
 │
 ├── bloom-box-logo.png    # Brand logo
 ├── hero_roses.png        # Hero carousel — slide 1
 └── image_2.jpg           # Hero carousel — slide 2
+```
 
 ---
 
-## Pages & Sections
+## 📄 Page Sections
 
 ### `boxes.html`
 
-| Section | ID | Description |
+| Section | Selector | Description |
 |---|---|---|
-| Navigation | `.nav-bar` | Sticky navbar with scroll-spy active link highlighting |
-| Hero | `.hero` | Split layout with tagline, CTA buttons, and auto-rotating image carousel |
-| Box Selection | `#boxes` | Radio card grid — Small, Medium (default), Large boxes with pricing |
-| Flower Selection | `#flowers` | Radio cards for flower variety choice |
-| Vase Selection | `#vases` | Radio cards for vase upgrade options |
-| Care Guide | `#care-guide` | Flower care tips section |
-| Order Summary | `.order-summary-section` | Live summary with selected box, flower, vase, and total |
-| Proceed Button | `#proceed-btn` | Validates selection, saves to localStorage, navigates to subscription page |
+| Navbar | `.nav-bar` | Sticky header with scroll-spy active link highlighting |
+| Hero | `.hero` | Split layout — tagline, CTA buttons, image carousel |
+| Box Selection | `#boxes` | Radio card grid — Small / Medium / Large |
+| Flower Selection | `#flowers` | Radio cards — flower variety choice |
+| Vase Selection | `#vases` | Radio cards — vase upgrade options |
+| Care Guide | `#care-guide` | Flower care tips |
+| Order Summary | `.order-summary-section` | Live total + Proceed button |
 
 ### `subscription.html`
 
-| Step | Description |
-|---|---|
-| Step 1 — Frequency | Tab-style radio buttons: Weekly / Bi-Weekly / Monthly |
-| Step 2 — Payment Plan | Toggle cards: Pay-per-delivery vs Yearly Prepay (BEST VALUE badge) |
-| Step 3 — Add-ons | Checkbox cards for special occasion bundles (optional) |
-| Step 4 — Delivery Details | Name, phone, email, delivery address with validation |
-| Order Summary | Sticky panel with full breakdown — box, vase, add-ons, discount, total |
-| Checkout | Submit triggers loading state → success modal on completion |
+| Step | Section | Description |
+|---|---|---|
+| 1 | Delivery Frequency | Tab-style radio: Weekly / Bi-Weekly / Monthly |
+| 2 | Payment Plan | Toggle cards: Pay-per-delivery vs Yearly Prepay (BEST VALUE badge) |
+| 3 | Add-ons | Optional checkbox cards for special occasions |
+| 4 | Delivery Details | Name, phone, email, address with inline validation |
+| — | Order Summary | Sticky panel — box, vase, add-ons, discount, total |
+| — | Checkout | Loading state → animated success modal |
 
 ---
 
-## Tech Stack
-
-- **HTML5** — semantic structure, accessible form elements
-- **CSS3** — custom properties, Flexbox, Grid, animations (`@keyframes`), responsive media queries
-- **JavaScript (ES6+)** — DOM manipulation, event listeners, `localStorage` API, dynamic pricing
-- **Google Fonts** — Playfair Display, Dancing Script, Montserrat
-- CSS @keyframesPrice pulse animation, modal entrance, carousel slide transitions
-
-No npm, no bundler, no framework. Open `boxes.html` and it runs.
-
----
-
-How It Works
-
-User visits boxes.html and selects a box size, flower type, and vase option.
-The live order summary updates dynamically as selections change.
-User clicks Proceed — selections are saved to localStorage and the app navigates to subscription.html.
-User configures delivery frequency, payment plan, and optional special occasion add-ons.
-The sticky order summary recalculates pricing in real time.
-User fills in delivery details (name, phone, email, address) and submits.
-A success modal confirms the order and clears localStorage.
-
-
-
-## Getting Started
-
-### Run Locally
+## 🚀 Getting Started
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/your-username/bloom-box.git
 cd bloom-box
 
-# Open in browser
-open boxes.html         # macOS
-start boxes.html        # Windows
-xdg-open boxes.html     # Linux
+# 2. Open in browser
+open boxes.html          # macOS
+start boxes.html         # Windows
+xdg-open boxes.html      # Linux
 ```
 
-Or simply drag `boxes.html` into any browser window.
+Or drag `boxes.html` directly into any browser window.
 
-> **Note:** The hero carousel images (`hero_roses.png`, `image_2.jpg`) and logo (`bloom-box-logo.png`) must be present in the same directory for the full visual experience.
-
-### Recommended Development Setup
-
-⚡ No npm · No bundler · No framework — open boxes.html and it runs instantly.
-- **Editor:** VS Code with Live Server extension
+**Recommended setup:**
+- **Editor:** VS Code + [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
 - **Browser:** Chrome or Firefox (latest)
-- **No build step required**
+
+> ⚠️ Keep `hero_roses.png`, `image_2.jpg`, and `bloom-box-logo.png` in the same directory as the HTML files for the full visual experience.
 
 ---
 
-## Screenshots
-<img width="1705" height="979" alt="Screenshot 2026-03-13 at 3 07 56 AM" src="https://github.com/user-attachments/assets/76a862b0-cc8a-4341-aa92-40d167fc5ea9" />
-<img width="1700" height="980" alt="Screenshot 2026-03-13 at 3 09 42 AM" src="https://github.com/user-attachments/assets/09b0d7cb-d6ea-4e7e-b0e5-06f1b3b1227d" />
-<img width="1704" height="822" alt="Screenshot 2026-03-13 at 3 10 00 AM" src="https://github.com/user-attachments/assets/63201a43-1eb0-4134-9a47-e57d57a786ab" />
-<img width="1707" height="736" alt="Screenshot 2026-03-13 at 3 10 13 AM" src="https://github.com/user-attachments/assets/29d6c59c-0a51-4116-94d0-ce57814a2850" />
-<img width="1710" height="915" alt="Screenshot 2026-03-13 at 3 10 26 AM" src="https://github.com/user-attachments/assets/2e6eb628-a202-4ea3-b1b5-22815f794e0b" />
+## 🎯 Learning Outcomes
 
-<img width="1707" height="938" alt="Screenshot 2026-03-13 at 3 10 40 AM" src="https://github.com/user-attachments/assets/dfd9a34a-0a52-4a85-b78c-409c60b372f6" />
-
-<img width="688" height="754" alt="Screenshot 2026-03-13 at 3 11 01 AM" src="https://github.com/user-attachments/assets/49231d2f-63e9-4799-8649-179d469f6961" />
-
-🎯 Learning Outcomes
 This project demonstrates:
 
-Multi-page state management using the browser's localStorage API
-Dynamic DOM manipulation — live pricing, summaries, and validation feedback
-Asynchronous UI patterns — loading states, animated modals, CSS transitions
-Responsive design — CSS Flexbox, Grid, and media queries
-Scroll-driven interactivity — scroll spy navigation without any library
-Modular CSS architecture — separate stylesheets per page/feature
-Accessible form design — semantic labels, focus management, client-side validation
+1. **Multi-page state management** via the browser's `localStorage` API
+2. **Dynamic DOM manipulation** — live pricing, summaries, and validation feedback
+3. **Asynchronous UI patterns** — loading states, animated modals, CSS transitions
+4. **Responsive design** using CSS Flexbox, Grid, and media queries
+5. **Scroll-driven interactivity** — scroll spy navigation without any external library
+6. **Modular CSS architecture** — separate stylesheets per page and feature
+7. **Accessible form design** — semantic labels, focus management, client-side validation
 
-Future Improvements
+---
 
-🔗 Backend API integration for real order processing and email confirmations
-🔐 User authentication and order history dashboard
-💳 Payment gateway integration (Razorpay / Stripe)
-📦 Real-time delivery tracking with status updates
-📍 Auto-detect user location for address pre-fill
-⚛️ React / Vue.js rewrite for scalable component architecture
-🌐 Multi-language and multi-currency support
+## 🔮 Future Improvements
 
-## Contributing
+1. 🔗 Backend API integration for real order processing and email confirmations
+2. 🔐 User authentication and order history dashboard
+3. 💳 Payment gateway integration (Razorpay / Stripe)
+4. 📦 Real-time delivery tracking with status updates
+5. 📍 Auto-detect user location for delivery address pre-fill
+6. ⚛️ React / Vue.js rewrite for scalable component architecture
+7. 🌐 Multi-language and multi-currency support
 
-1. Fork the repo
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature`
 3. Commit your changes: `git commit -m 'Add your feature'`
 4. Push to the branch: `git push origin feature/your-feature`
@@ -198,11 +264,16 @@ Future Improvements
 
 ---
 
-👨‍💻 Author
-Harsh Kumar
-B.Tech CSE 2025-29 | Semester II
+## 👨‍💻 Author
+
+<div align="center">
+
+**Harsh Kumar**
+B.Tech CSE 2025–29 · Semester II
 School of Future Tech, ITM Skills University
 
 ---
 
-<p align="center">Made with 🌸 by the Bloom Box team</p>
+*Made with 🌸 — Bloom Box*
+
+</div>
