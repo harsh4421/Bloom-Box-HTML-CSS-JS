@@ -2,11 +2,11 @@
 Semester II Sprint I
 HTML5, CSS, JavaScript Final Project
 
-# 🌸 Bloom Box — Flower Subscription E-Commerce Platform
+🌸 Bloom Box — Flower Subscription E-Commerce Platform
 
-> A fully responsive, multi-page flower subscription web app built with pure HTML5, CSS3, and vanilla JavaScript — no frameworks, no build tools.
+A modern, fully responsive flower subscription web app that lets users build a custom flower box, configure a recurring delivery plan, and complete checkout — all powered by pure HTML5, CSS3, and vanilla JavaScript with zero dependencies.
 
----
+🚀 LIVE DEMO: https://bloom-box-theta.vercel.app/
 
 ## 📋 Table of Contents
 
@@ -36,13 +36,7 @@ HTML5, CSS, JavaScript Final Project
 
 The entire order flow spans two pages and uses `localStorage` to pass order data between them — no backend required.
 
----
 
-## Live Demo
-
-Open `boxes.html` in any modern browser to get started. No installation or build step needed.
-
----
 
 ## Features
 
@@ -65,18 +59,20 @@ Open `boxes.html` in any modern browser to get started. No installation or build
 
 ## File Structure
 
-```
 bloom-box/
-├── boxes.html           # Main page — hero, box/flower/vase selector, order summary
-├── subscription.html    # Subscription config — frequency, payment, add-ons, checkout
-├── style.css            # Global styles — navbar, hero, product cards, carousel
-├── subscription.css     # Subscription page styles — tabs, toggles, checkbox cards, modal
-├── script.js            # Scroll spy, hero carousel, box builder logic, localStorage write
-├── subscription.js      # Live pricing, form validation, success modal, localStorage read
-├── bloom-box-logo.png   # Brand logo
-├── hero_roses.png       # Hero carousel image 1
-└── image_2.jpg          # Hero carousel image 2
-```
+│
+├── boxes.html            # Page 1 — Hero, box/flower/vase selector, order summary
+├── subscription.html     # Page 2 — Frequency, payment plan, add-ons, checkout form
+│
+├── style.css             # Global styles — navbar, hero, product cards, carousel
+├── subscription.css      # Subscription page — tabs, toggles, checkbox cards, modal
+│
+├── script.js             # Scroll spy · Hero carousel · Box builder · localStorage write
+├── subscription.js       # Live pricing · Form validation · Success modal · localStorage read
+│
+├── bloom-box-logo.png    # Brand logo
+├── hero_roses.png        # Hero carousel — slide 1
+└── image_2.jpg           # Hero carousel — slide 2
 
 ---
 
@@ -108,71 +104,29 @@ bloom-box/
 
 ---
 
-## How It Works
-
-### Cross-Page State (localStorage)
-
-When the user clicks **Proceed** on `boxes.html`, the selected options are serialized and saved:
-
-```javascript
-const orderData = {
-  boxSize: "Medium",
-  boxPrice: 799,
-  flowerType: "Mixed Seasonal",
-  vaseOption: "Ceramic Vase",
-  vasePrice: 299
-};
-localStorage.setItem('bloomboxOrder', JSON.stringify(orderData));
-window.location.href = 'subscription.html';
-```
-
-`subscription.js` reads this on load and uses it as the pricing base. On successful order, the key is cleared.
-
-### Scroll Spy
-
-Listens to `window.scroll` and compares `scrollY + offset` against each section's `offsetTop` to determine the active nav link — evaluated bottom-up to handle overlaps correctly.
-
-### Hero Carousel
-
-Initialized with `setInterval` (4000ms), paused on `mouseenter`, resumed on `mouseleave`. Dot buttons are dynamically generated and kept in sync with the active slide index.
-
----
-
-## Pricing Logic
-
-```
-Cost per delivery = Box Price + Vase Price + Sum of selected add-ons
-
-Pay-per-delivery:
-  Total = Cost per delivery
-
-Yearly Prepay:
-  Deliveries per year = frequency_per_month × 12
-  Subtotal = Cost per delivery × Deliveries per year
-  Discount = Subtotal × 0.17
-  Total = Subtotal − Discount
-```
-
-**Frequency multipliers:**
-
-| Frequency | Deliveries/month | Deliveries/year |
-|---|---|---|
-| Weekly | 4 | 48 |
-| Bi-Weekly | 2 | 24 |
-| Monthly | 1 | 12 |
-
----
-
 ## Tech Stack
 
 - **HTML5** — semantic structure, accessible form elements
 - **CSS3** — custom properties, Flexbox, Grid, animations (`@keyframes`), responsive media queries
-- **Vanilla JavaScript** — DOM manipulation, event listeners, `localStorage` API, dynamic pricing
+- **JavaScript (ES6+)** — DOM manipulation, event listeners, `localStorage` API, dynamic pricing
 - **Google Fonts** — Playfair Display, Dancing Script, Montserrat
+- CSS @keyframesPrice pulse animation, modal entrance, carousel slide transitions
 
 No npm, no bundler, no framework. Open `boxes.html` and it runs.
 
 ---
+
+How It Works
+
+User visits boxes.html and selects a box size, flower type, and vase option.
+The live order summary updates dynamically as selections change.
+User clicks Proceed — selections are saved to localStorage and the app navigates to subscription.html.
+User configures delivery frequency, payment plan, and optional special occasion add-ons.
+The sticky order summary recalculates pricing in real time.
+User fills in delivery details (name, phone, email, address) and submits.
+A success modal confirms the order and clears localStorage.
+
+
 
 ## Getting Started
 
@@ -195,6 +149,7 @@ Or simply drag `boxes.html` into any browser window.
 
 ### Recommended Development Setup
 
+⚡ No npm · No bundler · No framework — open boxes.html and it runs instantly.
 - **Editor:** VS Code with Live Server extension
 - **Browser:** Chrome or Firefox (latest)
 - **No build step required**
@@ -211,6 +166,27 @@ Or simply drag `boxes.html` into any browser window.
 <img width="1707" height="938" alt="Screenshot 2026-03-13 at 3 10 40 AM" src="https://github.com/user-attachments/assets/dfd9a34a-0a52-4a85-b78c-409c60b372f6" />
 
 <img width="688" height="754" alt="Screenshot 2026-03-13 at 3 11 01 AM" src="https://github.com/user-attachments/assets/49231d2f-63e9-4799-8649-179d469f6961" />
+
+🎯 Learning Outcomes
+This project demonstrates:
+
+Multi-page state management using the browser's localStorage API
+Dynamic DOM manipulation — live pricing, summaries, and validation feedback
+Asynchronous UI patterns — loading states, animated modals, CSS transitions
+Responsive design — CSS Flexbox, Grid, and media queries
+Scroll-driven interactivity — scroll spy navigation without any library
+Modular CSS architecture — separate stylesheets per page/feature
+Accessible form design — semantic labels, focus management, client-side validation
+
+Future Improvements
+
+🔗 Backend API integration for real order processing and email confirmations
+🔐 User authentication and order history dashboard
+💳 Payment gateway integration (Razorpay / Stripe)
+📦 Real-time delivery tracking with status updates
+📍 Auto-detect user location for address pre-fill
+⚛️ React / Vue.js rewrite for scalable component architecture
+🌐 Multi-language and multi-currency support
 
 ## Contributing
 
