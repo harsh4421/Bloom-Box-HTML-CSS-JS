@@ -1593,7 +1593,8 @@ header {
    ========================= */
    
 .site-footer {
-    background-color: #fdf2f5;   
+    background-color: #fdf2f5;
+    padding: 80px 40px 30px;
 }
 
 
