@@ -12,6 +12,8 @@
 
 **Semester II · Sprint I · HTML5 / CSS / JavaScript Final Project**
 
+🚀 LIVE DEMO: https://bloom-box-theta.vercel.app/
+
 </div>
 
 ---
