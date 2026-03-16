@@ -562,9 +562,7 @@ header {
     background: #b1cba0;
 }
 
-/* =========================
-   Flowers Section
-   ========================= */
+/* Flowers Section */
 .flowers-section {
     padding: 100px 40px;
     background: #ffffff;
@@ -599,7 +597,7 @@ header {
     font-size: 1rem;
 }
 
- /* ── Vase Section ─────────────────────────────── */
+ /* Vase Section */
         .vase-section {
             padding: 100px 40px;
             background: linear-gradient(to bottom, #fff9fb, #fdf0f5);
@@ -749,7 +747,7 @@ header {
             fill: none;
         }
 
-        /* Terracotta — centred on its own row */
+
         .vase-card-center-row {
             grid-column: 1 / -1;
             display: flex;
@@ -760,7 +758,7 @@ header {
             width: 340px;
         }
 
-        /* ── Order Summary (inline, below vase section) ─ */
+        /* Order Summary */
         .order-summary-section {
             padding: 60px 40px;
             background: linear-gradient(to bottom, #fffcfd, #FFFBF5);
@@ -899,7 +897,7 @@ header {
             transform: scale(1);
         }
 
-        /* Dot indicators */
+        
         .carousel-dots {
             position: absolute;
             bottom: 14px;
@@ -927,9 +925,7 @@ header {
             border-radius: 4px;
         }
 
-/* =========================
-   Shop Filters Section
-   ========================= */
+/* Shop Filters Section */
 .shop-filters-container {
     max-width: 1200px;
     margin: 0 auto 40px;
@@ -1172,13 +1168,11 @@ header {
 .product-details {
     padding: 30px 25px 25px;
     background-color: #fcf4f6;
-    /* Very light pink pastel */
     border-radius: 30px 30px 0 0;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     margin-top: -20px;
-    /* Overlap the image container slightly */
     position: relative;
     z-index: 2;
 }
@@ -1277,9 +1271,7 @@ header {
     transform: scale(1.05);
 }
 
-/* =========================
-   Features Row Section
-   ========================= */
+/* Features Row Section */
 .features-section {
     padding: 60px 40px;
     background-color: #ffffff;
@@ -1337,9 +1329,7 @@ header {
     font-size: 0.75rem;
 }
 
-/* =========================
-   Promotional Banner Section
-   ========================= */
+/* Promotional Banner Section */
 .promo-banner-section {
     padding: 40px 40px 80px;
     max-width: 1200px;
@@ -1731,7 +1721,6 @@ header {
 
     .care-table-header {
         display: none;
-        /* Hide header on mobile, use a different pattern */
     }
 
     .footer-grid {
@@ -1779,7 +1768,6 @@ header {
 
     .promo-floral-dec {
         display: none;
-        /* Hide on small screens as it takes up too much space */
     }
 
     .promo-content h2 {
