@@ -33,7 +33,6 @@
 
     <main class="subscription-main">
 
-        <!-- Page Header -->
         <div class="sub-page-header">
             <span class="sub-breadcrumb"><a href="boxes.html">Home</a> <span class="breadcrumb-sep">›</span>
                 Subscription</span>
@@ -47,14 +46,14 @@
 
                 <form id="subscription-form" novalidate>
 
-                    <!-- 1. Delivery Frequency -->
+                    <!-- Delivery Frequency -->
                     <div class="form-group">
                         <h3><span class="step-badge">1</span>Delivery Frequency</h3>
                         <div class="radio-group tabs-group" id="frequency-tabs">
                             <label class="tab-label">
                                 <input type="radio" name="frequency" value="Weekly" checked>
                                 <span class="tab-content">
-                                    <span class="tab-icon">🗓️</span>
+                                    <span class="tab-icon"></span>
                                     <span class="tab-text">Weekly</span>
                                     <span class="tab-sub">4× / month</span>
                                 </span>
@@ -62,7 +61,7 @@
                             <label class="tab-label">
                                 <input type="radio" name="frequency" value="BiWeekly">
                                 <span class="tab-content">
-                                    <span class="tab-icon">📆</span>
+                                    <span class="tab-icon"></span>
                                     <span class="tab-text">Bi-Weekly</span>
                                     <span class="tab-sub">2× / month</span>
                                 </span>
@@ -70,7 +69,7 @@
                             <label class="tab-label">
                                 <input type="radio" name="frequency" value="Monthly">
                                 <span class="tab-content">
-                                    <span class="tab-icon">🌙</span>
+                                    <span class="tab-icon"></span>
                                     <span class="tab-text">Monthly</span>
                                     <span class="tab-sub">1× / month</span>
                                 </span>
@@ -78,14 +77,14 @@
                         </div>
                     </div>
 
-                    <!-- 2. Payment Plan -->
+                    <!-- Payment Plan -->
                     <div class="form-group">
                         <h3><span class="step-badge">2</span>Payment Plan</h3>
                         <div class="toggle-group">
                             <label class="toggle-switch">
                                 <input type="radio" name="paymentPlan" value="PayPerDelivery" checked>
                                 <span class="toggle-slider">
-                                    <span class="plan-icon">💳</span>
+                                    <span class="plan-icon"></span>
                                     <span class="plan-label">Pay per delivery</span>
                                     <span class="plan-sub">Flexible, cancel anytime</span>
                                 </span>
@@ -93,7 +92,7 @@
                             <label class="toggle-switch annual-switch">
                                 <input type="radio" name="paymentPlan" value="YearlyPrepay">
                                 <span class="toggle-slider">
-                                    <span class="plan-icon">🌟</span>
+                                    <span class="plan-icon"></span>
                                     <span class="plan-label">Yearly Prepay</span>
                                     <span class="plan-sub">Save ~17% annually</span>
                                 </span>
@@ -102,7 +101,7 @@
                         </div>
                     </div>
 
-                    <!-- 3. Special Occasion Add-ons -->
+                    <!-- Special Occasion Add-ons -->
                     <div class="form-group">
                         <h3><span class="step-badge">3</span>Special Occasion Add-ons <span
                                 class="optional-tag">Optional</span></h3>
@@ -110,7 +109,7 @@
                             <label class="checkbox-card">
                                 <input type="checkbox" name="addons" value="299" data-name="Birthday Bouquet Bundle">
                                 <span class="checkbox-content">
-                                    <span class="addon-icon">🎂</span>
+                                    <span class="addon-icon"></span>
                                     <span class="addon-info">
                                         <span class="addon-title">Birthday Bouquet Bundle</span>
                                         <span class="addon-desc">Premium seasonal blooms + ribbon wrap</span>
@@ -121,7 +120,7 @@
                             <label class="checkbox-card">
                                 <input type="checkbox" name="addons" value="399" data-name="Anniversary Roses">
                                 <span class="checkbox-content">
-                                    <span class="addon-icon">🌹</span>
+                                    <span class="addon-icon"></span>
                                     <span class="addon-info">
                                         <span class="addon-title">Anniversary Roses</span>
                                         <span class="addon-desc">12 red roses + personalised card</span>
@@ -132,7 +131,7 @@
                             <label class="checkbox-card">
                                 <input type="checkbox" name="addons" value="349" data-name="Holiday Arrangement">
                                 <span class="checkbox-content">
-                                    <span class="addon-icon">🎆</span>
+                                    <span class="addon-icon"></span>
                                     <span class="addon-info">
                                         <span class="addon-title">Holiday Arrangement</span>
                                         <span class="addon-desc">Festive themed bouquet for Diwali, Christmas,
@@ -144,7 +143,7 @@
                             <label class="checkbox-card">
                                 <input type="checkbox" name="addons" value="249" data-name="Sympathy / Get Well Soon">
                                 <span class="checkbox-content">
-                                    <span class="addon-icon">🤍</span>
+                                    <span class="addon-icon"></span>
                                     <span class="addon-info">
                                         <span class="addon-title">Sympathy / Get Well Soon</span>
                                         <span class="addon-desc">Soft white and lavender mix</span>
@@ -155,7 +154,7 @@
                         </div>
                     </div>
 
-                    <!-- 4. Delivery Details -->
+                    <!-- Delivery Details -->
                     <div class="form-group">
                         <h3><span class="step-badge">4</span>Delivery Details</h3>
                         <div class="details-grid">
@@ -217,7 +216,6 @@
                             <span id="summary-vase-price">₹0.00</span>
                         </div>
                         <div id="summary-addons-container">
-                            <!-- Dynamically populated via JS -->
                         </div>
 
                         <div class="divider"></div>
@@ -234,7 +232,7 @@
 
                         <button type="submit" form="subscription-form" class="btn btn-primary btn-full"
                             id="checkout-btn">
-                            <span class="btn-text">Subscribe Now 🌺</span>
+                            <span class="btn-text">Subscribe Now </span>
                             <span class="btn-spinner" aria-hidden="true"></span>
                         </button>
                         <p class="guarantee-text">Cancel anytime &nbsp;·&nbsp; No hidden fees</p>
@@ -247,7 +245,6 @@
     <!-- Success Modal -->
     <div id="success-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
         <div class="modal-card">
-            <div class="modal-confetti" aria-hidden="true">🌸 🌷 🌺 🌹 🌼</div>
             <div class="modal-icon">✅</div>
             <h2 id="modal-heading" class="modal-title">You're <em>blooming</em>!</h2>
             <p class="modal-message" id="modal-message">
